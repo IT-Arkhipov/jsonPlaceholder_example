@@ -65,7 +65,7 @@ test_delete_code_with_body - проверка кода ответа (200) на �
 
 Выгрузить и распаковать архив проекта https://github.com/IT-Arkhipov/jsonPlaceholder_example
 
-Скачать docker-образ по ссылке https://drive.google.com/file/d/1XLHs2vA7hN44KJyMt58tDuH6mCDNBW6J/view?usp=sharing
+Скачать docker-образ по ссылке https://drive.google.com/file/d/1XLHs2vA7hN44KJyMt58tDuH6mCDNBW6J/view?usp=sharing (71,1 Мб)
 
 Загрузить docker-файл с образом:
 
