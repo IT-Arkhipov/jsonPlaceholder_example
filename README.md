@@ -58,3 +58,20 @@ test_delete_code_with_body - проверка кода ответа (200) на �
 ### Запуск всех тестов
 
 `python -m pytest -s -v`
+
+---
+
+## Тестирование через Docker-образ
+
+Выгрузить и распаковать архив проекта https://github.com/IT-Arkhipov/jsonPlaceholder_example
+
+Скачать docker-образ по ссылке https://drive.google.com/file/d/1XLHs2vA7hN44KJyMt58tDuH6mCDNBW6J/view?usp=sharing
+
+Загрузить docker-файл с образом:
+
+`docker load -i api_tests.tar`
+
+### Запус тестов из папки с проектом:
+
+`docker-compose up`
+
