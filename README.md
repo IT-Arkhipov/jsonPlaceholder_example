@@ -65,12 +65,33 @@ test_delete_code_with_body - проверка кода ответа (200) на �
 
 Выгрузить и распаковать архив проекта https://github.com/IT-Arkhipov/jsonPlaceholder_example
 
+Загрузить docker-образ _python:alipne_
+
+`docker pull python:alpine`
+
 Скачать docker-образ по ссылке https://drive.google.com/file/d/1XLHs2vA7hN44KJyMt58tDuH6mCDNBW6J/view?usp=sharing (71,1 Мб)
 
 Загрузить docker-файл с образом:
 
 `docker load -i api_tests.tar`
 
-### Запус тестов из папки с проектом:
+Убедиться в наличии установленных образов:
+
+`docker image ls`
+
+
+
+> REPOSITORY      TAG     
+> pytest_runner   latest    
+> python          alpine    
+
+
+
+### Запус тестов из папки с проектом (Dockerfile):
+
+`docker run --rm --mount type=bind,src=<Полный путь до папки с проектом>,target=/tests/ pytest_runner`
+
+
+### Запус тестов из папки с проектом (docker-compose.yml):
 
 `docker-compose up`
